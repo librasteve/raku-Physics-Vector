@@ -1,31 +1,27 @@
 {
-  "name": "App::Crag",
-  "description": "calculator using raku grammars",
-  "version": "0.0.11",
+  "name": "Physics::Vector",
+  "description": "Physics::Vector with Units",
+  "version": "0.0.1",
   "perl": "6.d",
   "authors": [
     "librasteve"
   ],
   "auth": "zef:librasteve",
   "depends": [
-    "Physics::Measure",
-    "Physics::Constants",
-    "Physics::Navigation",
-    "Time::Duration::Parser"
+    "Physics::Unit",
+    "Physics::Vector"
   ],
   "build-depends": [],
   "test-depends": [],
   "provides": {
-    "App::Crag": "lib/App/Crag.rakumod"
+    "Physics::Vector": "lib/Physics/Vector.rakumod"
   },
   "resources": [],
   "license": "Artistic-2.0",
   "tags": [
-    "App",
-    "CLI",
     "Physics",
-    "Navigation"
+    "Vector"
   ],
   "api": "1",
-  "source-url": "git://github.com/librasteve/raku-App-Crag.git"
+  "source-url": "git://github.com/librasteve/raku-Physics-Vector.git"
 }
