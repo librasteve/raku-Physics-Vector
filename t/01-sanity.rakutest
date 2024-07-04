@@ -1,0 +1,21 @@
+use v6.d;
+use Test;
+
+use Physics::Vector;
+use Physics::Measure :ALL;
+
+my $v1 = Physics::Vector.new([1, 2, 3], 'm/s');
+
+my $v = (3,4,0), my $u = 'm/s';
+my $v2 = Physics::Vector.new(:$v, :$u);
+
+is $v2, '^(3, 4, 0)m/s',            'new';
+
+is ($v1+$v2), '^(4, 6, 3)',         'add';
+is (-$v1), '^(-1, -2, -3)m/s',      'negate';
+
+my $m = 10kg;
+my $p = $m * $v1;
+is $p, '^(10, 20, 30)kg m/s',        'p=mv';
+
+done-testing;
